@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Random Password Generator</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="card">
+          <h1>
+            Generate a <span class="green"><br />random password</span>
+          </h1>
+          <p>Use a cryptographically secure password.</p>
+          <button class="generate-btn" onclick="generatePassword()">
+            Generate passwords
+          </button>
+          <hr />
+          <div class="pw-group">
+            <div class="pw-group-item">
+              <span id="pwEl1">password 1</span>
+              <button
+                class="gg-clipboard"
+                id="button1"
+                onclick="CopyToClipboard('pwEl1')"
+              ></button>
+            </div>
+            <div class="pw-group-item">
+              <span id="pwEl2">password 2</span>
+              <button
+                class="gg-clipboard"
+                id="button1"
+                onclick="CopyToClipboard('pwEl2')"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
